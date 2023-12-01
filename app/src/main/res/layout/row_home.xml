@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeRowModel" type="com.avafast.app.modules.home.data.model.HomeRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnellipseten"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <FrameLayout android:id="@+id/frameStackellipseten"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_52pxv"
+            android:layout_marginStart="@dimen/_1pxh" android:layout_width="@dimen/_46pxh">
+            <View
+                android:background="@drawable/rectangle_bg_white_a700_radius_26"
+                android:id="@+id/viewEllipseTen"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_52pxh" android:layout_width="@dimen/_46pxh"/>
+            <ImageView android:id="@+id/imageGroup"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_33pxh"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginEnd="@dimen/_6pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="@dimen/_31pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_black_900"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group_black_900"/>
+        </FrameLayout>
+        <TextView android:id="@+id/txtVegetariano"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_2pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent"
+            android:text="@{homeRowModel.txtVegetariano}"
+            style="@style/txtPoppinsmedium10" tools:text="@string/lbl_vegetariano"/>
+    </LinearLayout>
+</layout>

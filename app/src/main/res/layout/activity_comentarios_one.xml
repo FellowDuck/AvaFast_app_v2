@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="comentariosOneVM" type="com.avafast.app.modules.comentariosone.data.viewmodel.ComentariosOneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnarrowright"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_61pxv"
+        android:layout_marginEnd="@dimen/_1pxh"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_901">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp" style="@style/groupStyleblack_901">
+            <LinearLayout android:id="@+id/linearRowarrowright"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_26pxv"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_64pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowright"
+                    android:layout_height="@dimen/_16pxh"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_23pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowright"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtAvaliaesaute"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_48pxh"
+                    android:layout_weight="0.85"
+                    android:layout_width="0dp"
+                    android:letterSpacing="0.03"
+                    android:singleLine="true"
+                    android:text="@{comentariosOneVM.comentariosOneModel.txtAvaliaesaute}"
+                    style="@style/txtPoppinsmedium18" tools:text="@string/msg_avalia_es_aute"/>
+                <ImageView android:id="@+id/imageAddOne"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginStart="@dimen/_50pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_add1"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_add1"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearComentariosOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleblack_901">
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="start"
+                android:id="@+id/recyclerListellipseeighteen"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_13pxh}" tools:itemCount="4" tools:listitem="@layout/row_listellipseeighteen"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

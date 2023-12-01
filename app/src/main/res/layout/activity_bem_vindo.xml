@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bemVindoVM" type="com.avafast.app.modules.bemvindo.data.viewmodel.BemVindoVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnavafast"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_56pxv"
+        android:layout_marginEnd="@dimen/_1pxh"
+        android:layout_marginTop="@dimen/_90pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_900">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearBemVindo"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtAvaFast"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="0.04"
+                    android:singleLine="true"
+                    android:text="@{bemVindoVM.bemVindoModel.txtAvaFast}"
+                    style="@style/txtPoppinsbold30" tools:text="@string/lbl_avafast"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtAprendaamexer"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_66pxv"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.02"
+                    android:singleLine="true"
+                    android:text="@{bemVindoVM.bemVindoModel.txtAprendaamexer}"
+                    style="@style/txtPoppinsmedium15" tools:text="@string/msg_aprenda_a_mexer"/>
+                <ImageView android:gravity="start"
+                    android:id="@+id/imageRestOne"
+                    android:layout_height="@dimen/_412pxh"
+                    android:layout_marginTop="@dimen/_40pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_womanwithshop}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_womanwithshop"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnProximo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_127pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_18pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_18pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_proximo"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_proximo"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

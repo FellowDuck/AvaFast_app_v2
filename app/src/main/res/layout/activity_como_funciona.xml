@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="comoFuncionaVM" type="com.avafast.app.modules.comofunciona.data.viewmodel.ComoFuncionaVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnavafast"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_72pxv"
+        android:layout_marginEnd="@dimen/_20pxh"
+        android:layout_marginStart="@dimen/_11pxh"
+        android:layout_marginTop="@dimen/_90pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_901">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearComoFunciona"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtAvaFast"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="0.04"
+                    android:singleLine="true"
+                    android:text="@{comoFuncionaVM.comoFuncionaModel.txtAvaFast}"
+                    style="@style/txtPoppinsbold30" tools:text="@string/lbl_avafast"/>
+                <ImageView android:gravity="start"
+                    android:id="@+id/imageImageTwo"
+                    android:layout_height="@dimen/_384pxh"
+                    android:layout_marginTop="@dimen/_62pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image2}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image2"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtComoFuncionamo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_66pxv"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.04"
+                    android:singleLine="true"
+                    android:text="@{comoFuncionaVM.comoFuncionaModel.txtComoFuncionamo}"
+                    style="@style/txtPoppinsbold25" tools:text="@string/msg_como_funcionamo"/>
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtOintuirodono"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.02"
+                    android:text="@{comoFuncionaVM.comoFuncionaModel.txtOintuirodono}"
+                    style="@style/txtPoppinsmedium15" tools:text="@string/msg_o_intuiro_do_no"/>
+                <LinearLayout android:id="@+id/linearRowvoltar"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_25pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnVoltar"
+                        android:layout_height="@dimen/_45pxv"
+                        android:layout_width="@dimen/_82pxh"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:paddingEnd="@dimen/_17pxh"
+                        android:paddingStart="@dimen/_17pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_voltar"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_voltar"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnProximo"
+                        android:layout_height="@dimen/_45pxv"
+                        android:layout_marginStart="@dimen/_191pxh"
+                        android:layout_width="@dimen/_82pxh"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:paddingEnd="@dimen/_9pxh"
+                        android:paddingStart="@dimen/_9pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_proximo"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_proximo"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:id="@+id/linearProductItem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_900">
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearRowellipsesixteen"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_42pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnellipsesixteen"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_weight="0.87" android:layout_width="0dp" android:orientation="vertical">
+                <FrameLayout android:id="@+id/frameStackellipsesixteen"
+                    android:layout_height="@dimen/_84pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_3pxh" android:layout_width="@dimen/_87pxh">
+                    <View
+                        android:background="@drawable/rectangle_bg_white_a700_radius_43_5"
+                        android:id="@+id/viewEllipseSixteen"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_84pxh" android:layout_width="@dimen/_87pxh"/>
+                    <ImageView android:id="@+id/imageLogococobambu"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_74pxh"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginEnd="@dimen/_6pxh"
+                        android:layout_marginStart="@dimen/_6pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="@dimen/_74pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_logococobambu}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_logococobambu"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/imageStarReview"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="@dimen/_105pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_starreview_white_a700"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_starreview_white_a700"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCocoBambu"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/lbl_coco_bambu"
+                    style="@style/txtPoppinssemibold15" tools:text="@string/lbl_coco_bambu"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFrutosdoMar"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/lbl_frutos_do_mar"
+                    style="@style/txtPoppinsmedium12" tools:text="@string/lbl_frutos_do_mar"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageVector"
+                android:layout_height="@dimen/_14pxh"
+                android:layout_marginBottom="@dimen/_157pxv"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_width="@dimen/_16pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vector_bluegray_400"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_bluegray_400"/>
+        </LinearLayout>
+        <View android:background="@color/gray_200"
+            android:id="@+id/lineLineTwo" android:layout_gravity="start"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_11pxv" android:layout_width="@dimen/_181pxh"/>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRow87avaliaes"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageImageEleven"
+                android:layout_height="@dimen/_29pxh"
+                android:layout_width="@dimen/_30pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image11"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image11"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txt87avaliaes"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_weight="0.76" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@string/lbl_87_avalia_es"
+                style="@style/txtPoppinsmedium12" tools:text="@string/lbl_87_avalia_es"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

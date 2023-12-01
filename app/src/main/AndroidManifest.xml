@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.avafast.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.avafast.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.avafast.app.modules.comofunciona.ui.ComoFuncionaActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.avafast.app.modules.cadastroback.ui.CadastroBackActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.avafast.app.modules.verifynumber.ui.VerifyNumberActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.categoria.ui.CategoriaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.comentarios.ui.ComentariosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.bemvindo.ui.BemVindoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.sobremim.ui.SobreMimActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.comoresgatarpontos.ui.ComoResgatarPontosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.avalieeganhepontos.ui.AvalieEGanhePontosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.avaliarrestaurante.ui.AvaliarRestauranteActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.meusfavoritos.ui.MeusFavoritosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.home.ui.HomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.comentariosone.ui.ComentariosOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.otpscreen.ui.OtpScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.forgotpassword.ui.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.login.ui.LoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.restaurantedetalhado.ui.RestauranteDetalhadoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.avaliacoes.ui.AvaliacoesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avafast.app.modules.restaurante.ui.RestauranteActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

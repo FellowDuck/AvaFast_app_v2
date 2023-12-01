@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "649693255877",
+    "project_id": "avafast-21c9c",
+    "storage_bucket": "avafast-21c9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649693255877:android:41eee710a21c0264b538ac",
+        "android_client_info": {
+          "package_name": "com.avafast.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBG1GLSsmGyXX96ftx02W4KFWD2ERH4TU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

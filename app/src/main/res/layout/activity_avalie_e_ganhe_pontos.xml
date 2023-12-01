@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="avalieEGanhePontosVM" type="com.avafast.app.modules.avalieeganhepontos.data.viewmodel.AvalieEGanhePontosVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnavafast"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_72pxv"
+        android:layout_marginEnd="@dimen/_18pxh"
+        android:layout_marginStart="@dimen/_13pxh"
+        android:layout_marginTop="@dimen/_90pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_901">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearAvalieeganhe"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtAvaFast"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="0.04"
+                    android:singleLine="true"
+                    android:text="@{avalieEGanhePontosVM.avalieEGanhePontosModel.txtAvaFast}"
+                    style="@style/txtPoppinsbold30" tools:text="@string/lbl_avafast"/>
+                <ImageView android:gravity="start"
+                    android:id="@+id/imageImageFour"
+                    android:layout_height="@dimen/_384pxh"
+                    android:layout_marginTop="@dimen/_75pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image4}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image4"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_62pxv"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.04"
+                    android:singleLine="true"
+                    android:text="@{avalieEGanhePontosVM.avalieEGanhePontosModel.txtLanguage}"
+                    style="@style/txtPoppinsbold25" tools:text="@string/msg_avalie_e_ganhe"/>
+                <FrameLayout android:id="@+id/frameStackparagraphone"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_64pxv"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_322pxh">
+                    <View android:background="@color/black_900"
+                        android:id="@+id/viewParagraphOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_64pxv"
+                        android:layout_marginStart="@dimen/_2pxh" android:layout_width="@dimen/_320pxh"/>
+                    <TextView android:gravity="top|center"
+                        android:id="@+id/txtDescription"
+                        android:layout_gravity="top|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="match_parent"
+                        android:letterSpacing="0.02"
+                        android:text="@{avalieEGanhePontosVM.avalieEGanhePontosModel.txtDescription}"
+                        style="@style/txtPoppinsmedium15" tools:text="@string/msg_lorem_ipsum_dol"/>
+                </FrameLayout>
+                <LinearLayout android:id="@+id/linearRowvoltar"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_34pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnVoltar"
+                        android:layout_height="@dimen/_45pxv"
+                        android:layout_width="@dimen/_82pxh"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:paddingEnd="@dimen/_18pxh"
+                        android:paddingStart="@dimen/_18pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_voltar2"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_voltar2"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnProximo"
+                        android:layout_height="@dimen/_45pxv"
+                        android:layout_marginStart="@dimen/_191pxh"
+                        android:layout_width="@dimen/_82pxh"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:paddingEnd="@dimen/_9pxh"
+                        android:paddingStart="@dimen/_9pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_proximo"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_proximo"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
